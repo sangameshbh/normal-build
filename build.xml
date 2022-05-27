@@ -1,0 +1,16 @@
+<project name="sangamesh bank" default="savings" >
+<echo message="Welcome to sangamesh bank" />
+<target name="savings" depends="loan">
+<echo message="Welcome to saving acnt" />
+</target>
+<target name="loan" depends="bank balance">
+<echo message="Welcome to loan section" />
+</target>
+<target name="bank balance" depends="credit card">
+<echo message="Welcome to bank balance" />
+</target>
+<target name="credit card">
+<echo message="Welcome to credit card section" />
+</target>
+
+</project>
